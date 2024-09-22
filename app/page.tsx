@@ -8,7 +8,8 @@ export default function Home() {
     <h1 className="text-2xl font-medium pt-16">
       What do you want to get done today?
     </h1>
-    <div className="cursor-text h-full" onClick={() => editor?.focus()} >
+    {/* biome-ignore lint/a11y/useKeyWithClickEvents: if we would add a key event, we would end in a loop */}
+    <div className="cursor-text h-full" onClick={() => editor?.focus()}>
       <Editor />
     </div>
   </div>;
