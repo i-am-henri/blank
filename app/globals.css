@@ -2,22 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Departure Mono';
+  src: url('./fonts/DepartureMono-Regular.woff') format('woff');
 }
 
-@media (prefers-color-scheme: dark) {
+:root {
+  --background: #e1e1e1;
+  --foreground: #171717;
+  --primary: #4287f5;
+  --secondary: #f5ff8a;
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #4287f5;
+    --secondary: #f5ff8a;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Departure Mono", sans-serif;
 }
 
 @layer utilities {
